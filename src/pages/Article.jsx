@@ -4,8 +4,8 @@ import { useArticleQuery } from '../hooks'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 function Article() {
-//   const { data } = useArticleQuery()
-//   const { title, description, body } = data.article
+  const { data } = useArticleQuery()
+  const { title, description, body } = data.article
 const [article, setArticle] = useState([]);
 const { slug } = useParams()
 
